@@ -1,120 +1,191 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <meta name="viewport" content="width=device-width">
-        <title>HTML и CSS</title>
-        <link rel="stylesheet" href="styles/styles.less"/>
-    </head>
-    <body>
-        <header class="header">
-            <div class="column-wrapper">
-                <div class="header__content">
-                    <div class="header__logo">
-                        <a href="/"><img class="logo" src="styles/blocks/logo/logo.svg" alt="hh.ru" ></a>
-                    </div>
-                    <nav class="header__menu">
-                        <ul class="menu">
-                            <li class="menu__item">
-                                <a class="menu__link" href="#">Одежда</a>
-                            </li>
-                            <li class="menu__item">
-                                <a class="menu__link" href="#">Сумки</a>
-                            </li>
-                            <li class="menu__item">
-                                <a class="menu__link" href="#">Аксессуары</a>
-                            </li>
-                            <li class="menu__item">
-                                <a class="menu__link" href="#">Офисные принадлежности</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <div class="header__fill"></div>
-                    <div class="header__button">
-                        <button class="header-button-icon header-button-icon_search" aria-label="Search"></button>
-                    </div>
-                    <div class="header__button">
-                        <button class="header-button-icon header-button-icon_profile" aria-label="Profile"></button>
-                        <button class="header-button header-button_profile">Войти</button>
-                    </div>
-                    <div class="header__button header__button_menu">
-                        <button class="header-button-icon header-button-icon_menu" aria-label="Menu"></button>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>HTML и CSS</title>
+    <link rel="stylesheet" href="styles/styles.less" />
+</head>
+<body>
+    <header class="header">
+        <div class="column-wrapper">
+            <div class="header__content">
+                <div class="header__logo">
+                    <a href="/"><img class="logo" src="styles/blocks/logo/logo.svg" alt="hh.ru"></a>
+                </div>
+                <nav class="header__menu">
+                    <ul class="menu">
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Одежда</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Сумки</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Аксессуары</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Офисные принадлежности</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__fill"></div>
+                <div class="header__button">
+                    <button class="header-button-icon header-button-icon_search" aria-label="Search"></button>
+                </div>
+                <div class="header__button">
+                    <button class="header-button-icon header-button-icon_profile" aria-label="Profile"></button>
+                    <button class="header-button header-button_profile">Войти</button>
+                </div>
+                <div class="header__button header__button_menu">
+                    <button class="header-button-icon header-button-icon_menu" aria-label="Menu"></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section-content">
+        <div class="column-wrapper">
+            <h2 class="heading heading_level-2">Популярные товары</h2>
+            <div class="column-row">
+                <div class="column column_s-1 column_m-2 column_l-4">
+                    <a class="product-card" href="/">
+                        <div class="product-card__image-container">
+                            <img class="product-card__image" src="images/product-1.jpg" alt="Зонт" />
+                        </div>
+                        <h4 class="heading heading_level-4">Зонт</h4>
+                        <div class="product-card__price">1 990 ₽</div>
+                    </a>
+                </div>
+
+                <div class="column column_s-1 column_m-2 column_l-4">
+                    <a class="product-card" href="/">
+                        <div class="product-card__image-container">
+                            <img class="product-card__image" src="images/product-2.jpg" alt="Сумка" />
+                        </div>
+                        <h4 class="heading heading_level-4">Сумка</h4>
+                        <div class="product-card__price">290 ₽</div>
+                    </a>
+                </div>
+
+                <div class="column column_s-1 column_m-2 column_l-4">
+                    <a class="product-card" href="/">
+                        <div class="product-card__image-container">
+                            <img class="product-card__image" src="images/product-3.jpg" alt="Шлепанцы" />
+                        </div>
+                        <h4 class="heading heading_level-4">Шлепанцы</h4>
+                        <div class="product-card__price">790 ₽</div>
+                    </a>
+                </div>
+
+                <div class="column column_s-1 column_m-2 column_l-4">
+                    <a class="product-card" href="/">
+                        <div class="product-card__image-container">
+                            <img class="product-card__image" src="images/product-4.jpg" alt="Футболка" />
+                            <div class="product-card__sale">sale</div>
+                        </div>
+                        <h4 class="heading heading_level-4">Футболка</h4>
+                        <div class="product-card__price">
+                            <span class="product-card__old-price">690</span>
+                            390 ₽
+                        </div>
+                    </a>
+                </div>
+
+                <div class="column column_s-1 column_m-2 column_l-4">
+                    <a class="product-card" href="/">
+                        <div class="product-card__image-container">
+                            <img class="product-card__image" src="images/product-5.jpg" alt="Толстовка" />
+                        </div>
+                        <h4 class="heading heading_level-4">Толстовка</h4>
+                        <div class="product-card__price">13990 ₽</div>
+                    </a>
+                </div>
+
+                <div class="column column_s-1 column_m-2 column_l-4">
+                    <a class="product-card" href="/">
+                        <div class="product-card__image-container">
+                            <img class="product-card__image" src="images/product-6.jpg" alt="Подушка" />
+                        </div>
+                        <h4 class="heading heading_level-4">Подушка</h4>
+                        <div class="product-card__price">990 ₽</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="column-wrapper">
+            <div class="column-row services__items">
+                <div class="column column_s-2 column_m-2 column_l-4">
+                    <a class="service" href="/">
+                        <img class="service__icon" src="styles/blocks/services/delivery.svg" alt="#">
+                        <div class="service__description">
+                            <span>Быстрая доставка по всей России</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="column column_s-2 column_m-2 column_l-4">
+                    <a class="service" href="/">
+                        <img class="service__icon" src="styles/blocks/services/return.svg" alt="#">
+                        <div class="service__description">
+                            <span>100%&nbspгарантия&nbspвозврата и подлинность товара</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="column column_s-2 column_m-2 column_l-4">
+                    <a class="service" href="/">
+                        <img class="service__icon" src="styles/blocks/services/support.svg" alt="#">
+                        <div class="service__description">
+                            <span>Круглосуточная служба поддержки</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="column-wrapper">
+            <div class="promo column-row">
+                <div class="sm-buttons column column_s-2 column_m-3 column_l-4">
+                    <button class="sm-button sm-button_facebook" aria-label="Facebook"></button>
+                    <button class="sm-button sm-button_twitter" aria-label="Twitter"></button>
+                    <button class="sm-button sm-button_vk" aria-label="VK"></button>
+                    <button class="sm-button sm-button_instagram" aria-label="Instagram">
+                    </button>
+                </div>
+
+                <div class="app-buttons column column_s-2 column_m-3 column_l-4">
+                    <button class="app-button app-button_appstore" aria-label="App Store"></button>
+                    <button class="app-button app-button_googleplay" aria-label="Google Play"></button>
+                </div>
+
+                <div class="column column_l-4">
+                    <a href="/"><img class="promo__logo " src="styles/blocks/footer/hh.svg" alt="hh.ru"></a>
+                </div>
+            </div>
+
+            <div class="column-row">
+                <div class="column column_s-2 column_m-6 column_l-12">
+                    <hr class="footer__line">
+                </div>
+            </div>
+
+            <div class="column-row">
+                <div class="column column_s-2 column_m-5 column_l-12">
+                    <div class="footer__copyright">
+                        © 2019 Группа компаний HeadHunter<br>
+                        Сегодня на сайте 684&nbsp978 вакансий,
+                        34&nbsp789&nbsp747 резюме, 858 923 компании
+                        и за неделю 1 211 363 приглашения
                     </div>
                 </div>
             </div>
-        </header>
+        </div>
+    </footer>
 
-        <section class="section-content">
-            <div class="column-wrapper">
-                <h2 class="heading heading_level-2">Популярные товары</h2>
-                <div class="column-row">
-                    <div class="column column_s-1 column_m-2 column_l-4">
-                        <a class="product-card" href="/">
-                            <div class="product-card__image-container">
-                                <img class="product-card__image" src="images/product-1.jpg" alt="Зонт" />
-                            </div>
-                            <h4 class="heading heading_level-4">Зонт</h4>
-                            <div class="product-card__price">1 990 ₽</div>
-                        </a>
-                    </div>
-
-                    <div class="column column_s-1 column_m-2 column_l-4">
-                        <a class="product-card" href="/">
-                            <div class="product-card__image-container">
-                                <img class="product-card__image" src="images/product-2.jpg" alt="Сумка" />
-                            </div>
-                            <h4 class="heading heading_level-4">Сумка</h4>
-                            <div class="product-card__price">290 ₽</div>
-                        </a>
-                    </div>
-
-                    <div class="column column_s-1 column_m-2 column_l-4">
-                        <a class="product-card" href="/">
-                            <div class="product-card__image-container">
-                                <img class="product-card__image" src="images/product-3.jpg" alt="Шлепанцы" />
-                            </div>
-                            <h4 class="heading heading_level-4">Шлепанцы</h4>
-                            <div class="product-card__price">790 ₽</div>
-                        </a>
-                    </div>
-
-                    <div class="column column_s-1 column_m-2 column_l-4">
-                        <a class="product-card" href="/">
-                            <div class="product-card__image-container">
-                                <img class="product-card__image" src="images/product-4.jpg" alt="Футболка" />
-                                <div class="product-card__sale">sale</div>
-                            </div>
-                            <h4 class="heading heading_level-4">Футболка</h4>
-                            <div class="product-card__price">
-                                <span class="product-card__old-price">690</span>
-                                390 ₽
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="column column_s-1 column_m-2 column_l-4">
-                        <a class="product-card" href="/">
-                            <div class="product-card__image-container">
-                                <img class="product-card__image" src="images/product-5.jpg" alt="Толстовка" />
-                            </div>
-                            <h4 class="heading heading_level-4">Толстовка</h4>
-                            <div class="product-card__price">13990 ₽</div>
-                        </a>
-                    </div>
-
-                    <div class="column column_s-1 column_m-2 column_l-4">
-                        <a class="product-card" href="/">
-                            <div class="product-card__image-container">
-                                <img class="product-card__image" src="images/product-6.jpg" alt="Подушка" />
-                            </div>
-                            <h4 class="heading heading_level-4">Подушка</h4>
-                            <div class="product-card__price">990 ₽</div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <script src="js/grid.js"></script>
-    </body>
+    <script src="js/grid.js"></script>
+</body>
 </html>
