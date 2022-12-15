@@ -1,29 +1,31 @@
 .services {
-    box-sizing: content-box;
     background: #eeeeee;
+    padding: 30px 0;
+
+    @media @screen-only-s {
+        &__items>div:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+
+    @media @screen-gt-m {
+        padding: 40px 0;
+    }
 
     &__items {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        height: 240px;
 
         @media @screen-gt-s {
             flex-direction: row;
             align-items: center;
-            height: 100px;
-        }
-
-        @media @screen-gt-m {
-            height: 130px;
         }
     }
 }
 
 .service {
-    height: 40px;
     display: flex;
-    flex-direction: row;
     text-decoration: none;
     color: #333333;
     align-items: center;
@@ -39,16 +41,6 @@
             margin-right: 30px;
             width: 50px;
             height: $width;
-        }
-    }
-
-    &__description {
-        @media @screen-gt-m {
-            height: 40px;
-            line-height: 20px;
-            display: block;
-            margin-top: auto;
-            margin-bottom: auto;
         }
     }
 }

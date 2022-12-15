@@ -1,10 +1,17 @@
 .footer {
     background-color: #212122;
+    padding-bottom: 22px;
     padding-top: 30px;
-    box-sizing: border-box;
+    padding-bottom: 22px;
+
+    @media @screen-gt-s {
+        padding-top: 34px;
+        padding-bottom: 29px;
+    }
 
     @media @screen-gt-m {
-        padding-top: 40px;
+        padding-top: 44px;
+        padding-bottom: 35px;
     }
 
     &__line {
@@ -24,8 +31,6 @@
 
     &__copyright {
         color: #999999;
-        line-height: 20px;
-        height: 95px;
     }
 }
 
@@ -36,13 +41,11 @@
 
     @media @screen-gt-s {
         flex-direction: row;
-        height: 40px;
     }
 
     @media @screen-gt-m {
         flex-direction: row;
         margin-bottom: 39px;
-        height: 40px;
     }
     
     &__logo {
@@ -57,7 +60,7 @@
     }
 }
 
-.sm-buttons {
+.social-media-buttons {
     display: flex;
 
     @media @screen-only-s {
@@ -84,7 +87,7 @@
 @smicons: facebook, twitter, vk, instagram;
 @storeicons: appstore, googleplay;
 
-.sm-button {
+.social-media-button {
     background: none;
     border: 0;
     width: 36px;
