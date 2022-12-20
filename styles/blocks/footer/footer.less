@@ -1,0 +1,88 @@
+.footer {
+    background-color: #212122;
+    padding-bottom: 22px;
+    padding-top: 30px;
+
+    @media @screen-gt-s {
+        padding-top: 34px;
+        padding-bottom: 29px;
+    }
+
+    @media @screen-gt-m {
+        padding-top: 44px;
+        padding-bottom: 35px;
+    }
+
+    &__line {
+        height: 1px;
+        background: #666666;
+        border: 0;
+        margin: 0 0 15px 0;
+
+        @media @screen-gt-s {
+            margin: 0 0 30px 0;
+        }
+    }
+
+    &__copyright {
+        color: #999999;
+    }
+}
+
+.promo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+
+    @media @screen-gt-s {
+        flex-direction: row;
+    }
+
+    @media @screen-gt-m {
+        margin-bottom: 39px;
+    }
+
+    &__logo {
+        width: 46px;
+        height: $width;
+        float: right;
+        display: none;
+
+        @media @screen-gt-m {
+            display: block;
+        }
+    }
+}
+
+.social-media-buttons {
+    display: flex;
+
+    @media @screen-only-s {
+        margin-bottom: 30px;
+    }
+}
+
+.app-buttons {
+    display: flex;
+    column-gap: 8px;
+
+    @media @screen-gt-s {
+        justify-content: flex-end;
+    }
+
+    @media @screen-gt-m {
+        justify-content: flex-start;
+    }
+}
+
+.social-media-button {
+    width: 36px;
+    height: $width;
+    margin-right: 15px;
+}
+
+.app-button {
+    width: 140px;
+    height: 40px;
+    color: #fff;
+}

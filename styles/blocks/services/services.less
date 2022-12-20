@@ -1,0 +1,45 @@
+.services {
+    background: #eeeeee;
+    padding: 30px 0;
+
+
+    @media @screen-gt-m {
+        padding: 40px 0;
+    }
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        @media @screen-only-s {
+            row-gap: 30px;
+        }
+
+        @media @screen-gt-s {
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+}
+
+.service {
+    display: flex;
+    text-decoration: none;
+    color: #333333;
+    align-items: center;
+
+    &__icon {
+        margin-right: 20px;
+
+        @media @screen-gt-s {
+            margin-right: 10px;
+        }
+
+        @media @screen-gt-m {
+            margin-right: 30px;
+            width: 50px;
+            height: $width;
+        }
+    }
+}
